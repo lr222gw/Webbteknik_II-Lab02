@@ -5,7 +5,7 @@ var MessageBoard = {
     messages: [],
     textField: null,
     messageArea: null,
-    nameField : null, //Lade till denna, fungerar det? Lade till den då den används men finns inte...
+    nameField : null, //Lade till denna, fungerar dt? Lade till den då den används men finns inte....
 
     init:function(e)
     {
@@ -14,7 +14,7 @@ var MessageBoard = {
 		    MessageBoard.nameField = document.getElementById("inputName");
             MessageBoard.messageArea = document.getElementById("messagearea");
     
-            // Add eventhandlers    
+            // Add eventhandlers    s
             document.getElementById("inputText").onfocus = function(e){ this.className = "focus"; }
             document.getElementById("inputText").onblur = function(e){ this.className = "blur" }
             document.getElementById("buttonSend").onclick = function(e) {MessageBoard.sendMessage(); return false;}
@@ -38,8 +38,8 @@ var MessageBoard = {
         $.ajax({
 			type: "GET",
 			url: "functions.php",
-			data: {function: "getMessages"}
-		}).done(function(data) { // called when the AJAX call is ready
+            data: {function: "getMessages"}
+		}).done(function(data) { // called when the AJAX call is rready
 						
 			data = JSON.parse(data);
 		
@@ -55,7 +55,7 @@ var MessageBoard = {
 			}
 			document.getElementById("nrOfMessages").innerHTML = MessageBoard.messages.length;
 			
-		});
+        });
 	
 
     },
@@ -91,7 +91,7 @@ var MessageBoard = {
         var div = document.createElement("div");
         div.className = "message";
        
-        // Clock button
+        // Clock buttonn
         var aTag = document.createElement("a");
         aTag.href="#";
         aTag.onclick = function(){

@@ -16,8 +16,8 @@
     <link rel="apple-touch-icon" sizes="120x120" href="touch-icon-iphone-retina.png">
     <link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad-retina.png">
     <link rel="shortcut icon" href="pic/favicon.png">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-      <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+      <link rel="stylesheet" type="text/css" href="css/style.min.css" />
    
 
 	
@@ -47,16 +47,16 @@
         </div>
         
 
-        <script src="js/jquery.js"></script>
-        <script src="MessageBoard.js"></script>
-        <script src="js/script.js"></script>
-        <script src="Message.js"></script>
-        <script type="text/javascript" src="js/jquery.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <script src="MessageBoard.min.js"></script>
+        <script src="js/script.min.js"></script>
+        <script src="Message.min.js"></script>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
         <script type="text/javascript" src="js/longpoll.js"></script>
 
         <!-- This script is running to get the messages -->
-			<script src="js/script.js"></script>
-			<script src="js/bootstrap.js"></script>
+			<script src="js/script.min.js"></script>
+			<script src="js/bootstrap.min.js"></script>
 
 
 	</body>

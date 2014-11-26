@@ -1,5 +1,5 @@
 "use strict";
-
+//
 function Message(message, date){
 
 	this.getText = function() {
@@ -35,3 +35,4 @@ Message.prototype.getDateText = function() {
 
 
 
+/**/

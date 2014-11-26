@@ -7,11 +7,11 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="shortcut icon" href="ico/favicon.png">
-      <link rel="stylesheet" href="css/indexStyle.css"  >
+      <link rel="stylesheet" href="css/indexStyle.min.css"  >
     <title>Mezzy Labbage - Logga in</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
 
 		
@@ -31,7 +31,7 @@
       </form>
     </div> <!-- /container -->
     <!-- Custom styles for this template -->
-    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
 

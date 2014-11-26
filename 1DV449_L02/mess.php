@@ -18,7 +18,7 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
    
 	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/longpoll.js"></script>
+	<!-- <script type="text/javascript" src="js/longpoll.js"></script> <- denna finns inte...-->
 
 	<style type="text/css">
 	

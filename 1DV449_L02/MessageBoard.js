@@ -1,8 +1,11 @@
+"use strict";
+
 var MessageBoard = {
 
     messages: [],
     textField: null,
     messageArea: null,
+    nameField : null, //Lade till denna, fungerar det? Lade till den då den används men finns inte...
 
     init:function(e)
     {
@@ -18,14 +21,16 @@ var MessageBoard = {
             document.getElementById("buttonLogout").onclick = function(e) {MessageBoard.logout(); return false;}
     
             MessageBoard.textField.onkeypress = function(e){ 
-                                                    if(!e) var e = window.event;
-                                                    
-                                                    if(e.keyCode == 13 && !e.shiftKey){
-                                                        MessageBoard.sendMessage(); 
-                                                       
-                                                        return false;
-                                                    }
-                                                }
+                if(!e){
+                    var e = window.event;
+                }
+
+                if(e.keyCode == 13 && !e.shiftKey){
+                    MessageBoard.sendMessage();
+
+                    return false;
+                }
+            }
     
     },
     getMessages:function() {
@@ -57,14 +62,16 @@ var MessageBoard = {
     sendMessage:function(){
         
         if(MessageBoard.textField.value == "") return;
-        
+
         // Make call to ajax
         $.ajax({
 			type: "GET",
 		  	url: "functions.php",
-		  	data: {function: "add", name: MessageBoard.nameField.value, message:MessageBoard.textField.value}
+		  	data: {function: "add", name: MessageBoard.nameField.value, message: MessageBoard.textField.value}   // Är denna säker? borde datan kontrolleras som matas in? kod som <script>alert("XSS är möjlig")</script>verkar inte köras... så ok?
 		}).done(function(data) {
-		  alert("Your message is saved! Reload the page for watching it");
+		  //alert("Your message is saved! Reload the page for watching it");
+            //Bättre att uppdatera sidan åt användaren än att låta användaren göra det själv...
+            window.location.reload();
 		});
     
     },
@@ -85,7 +92,7 @@ var MessageBoard = {
         div.className = "message";
        
         // Clock button
-        aTag = document.createElement("a");
+        var aTag = document.createElement("a");
         aTag.href="#";
         aTag.onclick = function(){
 			MessageBoard.showTime(messageID);

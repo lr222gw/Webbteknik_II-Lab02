@@ -15,7 +15,7 @@ function sec_session_start() {
         session_regenerate_id(); // regenerated the session, delete the old one.
 }
 
-function checkUser() {
+/*function checkUser() {
 	if(!session_id()) {
 		sec_session_start();
 	}
@@ -34,7 +34,7 @@ function checkUser() {
 		header('HTTP/1.1 401 Unauthorized'); die();
 	}
 	return true;
-}
+}*/
 
 function isUser($u, $p) {
 	$db = null;
@@ -46,15 +46,18 @@ function isUser($u, $p) {
 	catch(PDOEception $e) {
 		die("Del -> " .$e->getMessage());
 	}
-	$q = "SELECT id FROM users WHERE username = '$u' AND password = '$p'";
+	$q = "SELECT id FROM users WHERE username = ? AND password = ?";
+    $param = [$u, $p];
 
-	$result;
-	$stm;
+	//$result;
+	//$stm;
 	try {
 		$stm = $db->prepare($q);
-		$stm->execute();
+		$stm->execute($param);
 		$result = $stm->fetchAll();
-		if(!$result) {
+
+		if(count($result) < 0) {
+
 			return "Could not find the user";
 		}
 	}
@@ -66,7 +69,7 @@ function isUser($u, $p) {
 	
 }
 
-function getUser($user) {
+/*function getUser($user) {
 	$db = null;
 
 	try {
@@ -100,5 +103,5 @@ function logout() {
 	}
 	session_end();
 	header('Location: index.php');
-}
+}*/
 

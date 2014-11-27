@@ -51,3 +51,6 @@ Webbteknik_II-Lab02
 ####Något som kunde göras: Slå samman bilderna till 1 storbild-fil och sedan använda sprite-teknik
 
 #Long Polling
+-Angående min lösning; I MessageBoard.js så har vi funktionen getMessages, den anropas när sidan först laddas. Funktionen gör ett ajaxanrop och ser till att hämta ner alla meddelanden som finns i databasen. 
+Jag har gjort att ajax-delen av koden körs varannan sekund, det funktionen gör efter att ha hämtat all message-data är att den bygger ihop varje meddelanden och pushar in dem i MessageBoard.messages, innan den får göra det så kontrollerar jag först hur många meddelanden som finns på användarens skärm, om det är mer än antalet meddelanden som har loggats så betyder det att ett nytt medelande har lagts till, då får koden köras. Detta gör att så fort en användare lägger till ett meddelande så meddelas ajax att skicka ut den nya listan med meddelanden.
+För att få nyaste meddelanden att hamna först så "reversade" jag bara datan med meddelanderna i.

@@ -1,6 +1,9 @@
 Webbteknik_II-Lab02
 ===================
 
+För att testa besök:
+http://grayfish.se/labb2/
+
 #Säkerhet
 
 ###Användaren kunde logga in med vilket lösenord/användarnamn som helst

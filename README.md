@@ -34,13 +34,20 @@ Webbteknik_II-Lab02
 - Källa: High Performance Web Sites Kapitel 3
 
 ###Flyttade Script till längst ner i bodyn, Flyttade CSS till headern
-- Man vill att script ska läsas in sist för att inte avbryta sidan för att komma fram. Om man har skriptet mitt i sidan så kommer sidan stanna och ladda in skriptet där istället för att fortsätta exekveringen av sidan. CSSn 
+- Man vill att script ska läsas in sist för att inte avbryta sidan för att komma fram. Om man har skriptet mitt i sidan så kommer sidan stanna och ladda in skriptet där istället för att fortsätta exekveringen av sidan. CSSn flyttades till toppen devlis för att om den ligger långt nere så kommer också stilen laddas in senare, vilket som ser "Choppy/choppigt" ut. Genom att ladda in CSSn tidigt så slipper vi det hackiga och sidan upplevs snabbare.
 - Innan denna förändring så tog det runt 650ms till 1 sekund. Efter förändringen mellan 650ms till 800ms.
 - Källa: High Performance Web Sites Kapitel 5 och 6
 
+###Ändrade ett inlinescript och lade den i filen script.js.
+- Detta gjorde inte sidan snabbare utan lite saktare. Även fast jag följer idéen om att alla script och stilar ska vara i egna filer. Anledningen till att det bara påverkar negativt är att filen behöver laddas ner och anropas (antar jag), det rörde sig om väldigt lite kod; i de fallen då det rör väldigt lite kod så kan ibland det mest optimala vara att använda inline.
+- Gick upp från 650ms till 800ms till 750ms->850ms, min dator är väldigt seg så detta kan vara ett sammanträffande snarare än ett resultat av ändringen.
+- Källa: High Performance Web Sites Kapitel 8
 
+###Minifierade CSS och JS-filer
+-Enligt boken så ska en minifiering göra väldigt mycket prestandamässigt. Det är för att filerna blir mindre i storlek och går snabbare för datorn att läsa. 
+-Jag märkte ingen skillnad, laddningstiden låg fortfarande runt 750ms till 850ms.
+- Källa: High Performance Web Sites Kapitel 10
 
 ####Något som kunde göras: Slå samman bilderna till 1 storbild-fil och sedan använda sprite-teknik
-
 
 #Long Polling

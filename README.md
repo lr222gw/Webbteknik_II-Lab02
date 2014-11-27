@@ -16,7 +16,9 @@ Webbteknik_II-Lab02
 ###Injection vid input av meddelanden (?) 
 - Hittades när jag kikade i Post.php-filen. Jag är inte säker på om datan var injektbar men Query-frågorna var ställda så att de inte kontrollerades efter injection. Dock så testade jag både att göra "DROP TABLE messages" samt <script>a|lert("xxs är tillgänglig")</script> men inget av dem visade tecken av att injection var möjlig.
 - Om injection var möjlig så skulle en elak användare kunnat utföra hack med javascript. (typ som sammy)
-- Jag har sett till att parameterfrågorna blir testade när datan skjuts in i databasen. Sen har jag utfört tester som pekar på att det inte är några risker för inskjutning av javascript
+- Jag har sett till att parameterfrågorna blir testade när datan skjuts in i databasen. Sen har jag utfört tester som pekar på att det inte är några risker för inskjutning av javascript, även kollat i databasen där javascripten ligger som strängar. Dock så lagras inte saker som "DROP TABLE messages" men de körs inte heller...
+
+####Lade till "use strict" i javascript-filerna...
 
 #Optimering
 

@@ -1,4 +1,13 @@
 $(document).ready(function() {
+    (function(){
+        var poll = function(){
+            //MessageBoard.getMessages();
+        };
+
+        setInterval(function(){
+            poll();
+        },2000);
+    })();
     MessageBoard.getMessages();
 });
 

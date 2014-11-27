@@ -2,73 +2,12 @@
   <library name="Generated files" type="javaScript">
     <properties>
       <sourceFilesUrls>
-        <item url="file://$PROJECT_DIR$/node_modules/uglify-js/lib/utils.min.js" />
-        <item url="file://$PROJECT_DIR$/Message.min.js" />
-        <item url="file://$PROJECT_DIR$/node_modules/uglify-js/lib/output.min.js" />
-        <item url="file://$PROJECT_DIR$/node_modules/uglify-js/lib/parse.min.js" />
-        <item url="file://$PROJECT_DIR$/js/jquery.min.js" />
-        <item url="file://$PROJECT_DIR$/node_modules/uglify-js/lib/scope.min.js" />
-        <item url="file://$PROJECT_DIR$/js/bootstrap.min.js" />
-        <item url="file://$PROJECT_DIR$/node_modules/uglify-js/lib/ast.min.js" />
-        <item url="file://$PROJECT_DIR$/node_modules/uglify-js/test/compress/blocks.min.js" />
-        <item url="file://$PROJECT_DIR$/node_modules/uglify-js/test/compress/loops.min.js" />
-        <item url="file://$PROJECT_DIR$/node_modules/uglify-js/lib/compress.min.js" />
-        <item url="file://$PROJECT_DIR$/node_modules/uglify-js/lib/sourcemap.min.js" />
-        <item url="file://$PROJECT_DIR$/node_modules/uglify-js/lib/transform.min.js" />
         <item url="file://$PROJECT_DIR$/js/script.min.js" />
-        <item url="file://$PROJECT_DIR$/node_modules/uglify-js/lib/mozilla-ast.min.js" />
-        <item url="file://$PROJECT_DIR$/node_modules/uglify-js/node_modules/uglify-to-browserify/index.min.js" />
-        <item url="file://$PROJECT_DIR$/node_modules/uglify-js/node_modules/uglify-to-browserify/test/index.min.js" />
-        <item url="file://$PROJECT_DIR$/node_modules/uglify-js/node_modules/source-map/build/mini-require.min.js" />
-        <item url="file://$PROJECT_DIR$/node_modules/uglify-js/node_modules/source-map/Makefile.dryice.min.js" />
-        <item url="file://$PROJECT_DIR$/node_modules/uglify-js/node_modules/source-map/build/test-suffix.min.js" />
-        <item url="file://$PROJECT_DIR$/node_modules/uglify-js/node_modules/source-map/build/suffix-browser.min.js" />
-        <item url="file://$PROJECT_DIR$/node_modules/uglify-js/node_modules/source-map/test/source-map/test-binary-search.min.js" />
-        <item url="file://$PROJECT_DIR$/node_modules/uglify-js/node_modules/source-map/test/source-map/test-dog-fooding.min.js" />
-        <item url="file://$PROJECT_DIR$/node_modules/uglify-js/node_modules/source-map/test/source-map/test-array-set.min.js" />
-        <item url="file://$PROJECT_DIR$/node_modules/uglify-js/node_modules/source-map/test/source-map/test-base64-vlq.min.js" />
-        <item url="file://$PROJECT_DIR$/node_modules/uglify-js/node_modules/source-map/test/source-map/util.min.js" />
-        <item url="file://$PROJECT_DIR$/node_modules/uglify-js/node_modules/source-map/test/source-map/test-util.min.js" />
-        <item url="file://$PROJECT_DIR$/node_modules/uglify-js/node_modules/source-map/lib/source-map/source-map-consumer.min.js" />
-        <item url="file://$PROJECT_DIR$/node_modules/uglify-js/node_modules/source-map/lib/source-map/source-map-generator.min.js" />
-        <item url="file://$PROJECT_DIR$/node_modules/uglify-js/node_modules/source-map/lib/source-map/array-set.min.js" />
-        <item url="file://$PROJECT_DIR$/node_modules/uglify-js/node_modules/source-map/lib/source-map.min.js" />
         <item url="file://$PROJECT_DIR$/MessageBoard.min.js" />
-        <item url="file://$PROJECT_DIR$/node_modules/uglify-js/node_modules/source-map/node_modules/amdefine/amdefine.min.js" />
-        <item url="file://$PROJECT_DIR$/node_modules/uglify-js/node_modules/source-map/node_modules/amdefine/intercept.min.js" />
-        <item url="file://$PROJECT_DIR$/node_modules/uglify-js/test/compress/issue-126.min.min.js" />
-        <item url="file://$PROJECT_DIR$/node_modules/uglify-js/test/compress/issue-267.min.js" />
-        <item url="file://$PROJECT_DIR$/node_modules/uglify-js/test/compress/issue-143.min.js" />
-        <item url="file://$PROJECT_DIR$/node_modules/uglify-js/test/compress/negate-iife.min.js" />
-        <item url="file://$PROJECT_DIR$/node_modules/uglify-js/test/compress/sequences.min.js" />
-        <item url="file://$PROJECT_DIR$/node_modules/uglify-js/test/compress/switch.min.js" />
-        <item url="file://$PROJECT_DIR$/node_modules/uglify-js/test/compress/dead-code.min.js" />
-        <item url="file://$PROJECT_DIR$/node_modules/uglify-js/test/compress/issue-105.min.js" />
-        <item url="file://$PROJECT_DIR$/node_modules/uglify-js/test/compress/issue-126.min.js" />
-        <item url="file://$PROJECT_DIR$/node_modules/uglify-js/test/compress/typeof.min.js" />
-        <item url="file://$PROJECT_DIR$/node_modules/uglify-js/test/compress/issue-22.min.js" />
-        <item url="file://$PROJECT_DIR$/node_modules/uglify-js/test/compress/labels.min.js" />
-        <item url="file://$PROJECT_DIR$/node_modules/uglify-js/test/compress/debugger.min.js" />
-        <item url="file://$PROJECT_DIR$/node_modules/uglify-js/test/compress/arrays.min.js" />
-        <item url="file://$PROJECT_DIR$/node_modules/uglify-js/test/compress/issue-12.min.js" />
-        <item url="file://$PROJECT_DIR$/node_modules/uglify-js/test/compress/issue-44.min.js" />
-        <item url="file://$PROJECT_DIR$/node_modules/uglify-js/test/compress/issue-59.min.js" />
-        <item url="file://$PROJECT_DIR$/node_modules/uglify-js/node_modules/source-map/lib/source-map/source-node.min.js" />
-        <item url="file://$PROJECT_DIR$/node_modules/uglify-js/node_modules/optimist/node_modules/wordwrap/index.min.js" />
-        <item url="file://$PROJECT_DIR$/node_modules/uglify-js/node_modules/source-map/lib/source-map/binary-search.min.js" />
-        <item url="file://$PROJECT_DIR$/node_modules/uglify-js/node_modules/source-map/lib/source-map/base64-vlq.min.js" />
-        <item url="file://$PROJECT_DIR$/node_modules/uglify-js/node_modules/source-map/lib/source-map/base64.min.js" />
-        <item url="file://$PROJECT_DIR$/node_modules/uglify-js/node_modules/optimist/node_modules/wordwrap/example/center.min.js" />
-        <item url="file://$PROJECT_DIR$/node_modules/uglify-js/node_modules/source-map/lib/source-map/util.min.js" />
-        <item url="file://$PROJECT_DIR$/node_modules/uglify-js/node_modules/optimist/node_modules/wordwrap/example/meat.min.js" />
-        <item url="file://$PROJECT_DIR$/node_modules/uglify-js/node_modules/async/lib/async.min.js" />
-        <item url="file://$PROJECT_DIR$/node_modules/uglify-js/tools/node.min.js" />
-        <item url="file://$PROJECT_DIR$/node_modules/uglify-js/node_modules/optimist/node_modules/wordwrap/test/wrap.min.js" />
-        <item url="file://$PROJECT_DIR$/node_modules/uglify-js/node_modules/optimist/test/_.min.js" />
-        <item url="file://$PROJECT_DIR$/node_modules/uglify-js/test/compress/drop-unused.min.js" />
-        <item url="file://$PROJECT_DIR$/node_modules/uglify-js/test/compress/issue-269.min.js" />
-        <item url="file://$PROJECT_DIR$/node_modules/uglify-js/test/compress/conditionals.min.js" />
-        <item url="file://$PROJECT_DIR$/node_modules/uglify-js/test/compress/concat-strings.min.js" />
+        <item url="file://$PROJECT_DIR$/Message.min.js" />
+        <item url="file://$PROJECT_DIR$/js/jquery.min.js" />
+        <item url="file://$PROJECT_DIR$/js/bootstrap.min.js" />
+        <item url="file://$PROJECT_DIR$/js/script.min.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
@@ -138,18 +77,14 @@
       <root url="file://$PROJECT_DIR$/node_modules/uglify-js/test/compress/concat-strings.min.js" />
       <root url="file://$PROJECT_DIR$/node_modules/uglify-js/lib/utils.min.js" />
       <root url="file://$PROJECT_DIR$/node_modules/uglify-js/lib/output.min.js" />
-      <root url="file://$PROJECT_DIR$/Message.min.js" />
       <root url="file://$PROJECT_DIR$/node_modules/uglify-js/lib/parse.min.js" />
       <root url="file://$PROJECT_DIR$/node_modules/uglify-js/lib/scope.min.js" />
-      <root url="file://$PROJECT_DIR$/js/jquery.min.js" />
       <root url="file://$PROJECT_DIR$/node_modules/uglify-js/lib/ast.min.js" />
-      <root url="file://$PROJECT_DIR$/js/bootstrap.min.js" />
       <root url="file://$PROJECT_DIR$/node_modules/uglify-js/test/compress/blocks.min.js" />
       <root url="file://$PROJECT_DIR$/node_modules/uglify-js/test/compress/loops.min.js" />
       <root url="file://$PROJECT_DIR$/node_modules/uglify-js/lib/compress.min.js" />
       <root url="file://$PROJECT_DIR$/node_modules/uglify-js/lib/sourcemap.min.js" />
       <root url="file://$PROJECT_DIR$/node_modules/uglify-js/lib/transform.min.js" />
-      <root url="file://$PROJECT_DIR$/js/script.min.js" />
       <root url="file://$PROJECT_DIR$/node_modules/uglify-js/lib/mozilla-ast.min.js" />
       <root url="file://$PROJECT_DIR$/node_modules/uglify-js/node_modules/uglify-to-browserify/index.min.js" />
       <root url="file://$PROJECT_DIR$/node_modules/uglify-js/node_modules/uglify-to-browserify/test/index.min.js" />
@@ -167,7 +102,6 @@
       <root url="file://$PROJECT_DIR$/node_modules/uglify-js/node_modules/source-map/lib/source-map/source-map-generator.min.js" />
       <root url="file://$PROJECT_DIR$/node_modules/uglify-js/node_modules/source-map/lib/source-map/array-set.min.js" />
       <root url="file://$PROJECT_DIR$/node_modules/uglify-js/node_modules/source-map/lib/source-map.min.js" />
-      <root url="file://$PROJECT_DIR$/MessageBoard.min.js" />
       <root url="file://$PROJECT_DIR$/node_modules/uglify-js/node_modules/source-map/node_modules/amdefine/amdefine.min.js" />
       <root url="file://$PROJECT_DIR$/node_modules/uglify-js/node_modules/source-map/node_modules/amdefine/intercept.min.js" />
       <root url="file://$PROJECT_DIR$/node_modules/uglify-js/test/compress/issue-126.min.min.js" />
@@ -203,6 +137,12 @@
       <root url="file://$PROJECT_DIR$/node_modules/uglify-js/test/compress/issue-269.min.js" />
       <root url="file://$PROJECT_DIR$/node_modules/uglify-js/test/compress/conditionals.min.js" />
       <root url="file://$PROJECT_DIR$/node_modules/uglify-js/test/compress/concat-strings.min.js" />
+      <root url="file://$PROJECT_DIR$/js/script.min.js" />
+      <root url="file://$PROJECT_DIR$/MessageBoard.min.js" />
+      <root url="file://$PROJECT_DIR$/Message.min.js" />
+      <root url="file://$PROJECT_DIR$/js/jquery.min.js" />
+      <root url="file://$PROJECT_DIR$/js/bootstrap.min.js" />
+      <root url="file://$PROJECT_DIR$/js/script.min.js" />
     </CLASSES>
     <SOURCES />
   </library>

@@ -48,7 +48,7 @@
         
 
         <script src="js/jquery.min.js"></script>
-        <script src="MessageBoard.min.js"></script>
+        <script src="MessageBoard.js"></script> <!--"MessageBoard.min.js" -->
         <script src="js/script.min.js"></script>
         <script src="Message.min.js"></script>
         <script type="text/javascript" src="js/jquery.min.js"></script>

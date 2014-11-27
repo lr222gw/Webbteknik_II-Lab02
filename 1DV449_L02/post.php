@@ -14,19 +14,22 @@ function addToDB($message, $user) {
 		die("Something went wrong -> " .$e->getMessage());
 	}
 	
-	$q = "INSERT INTO messages (message, name) VALUES('$message', '$user')";
+	$q = "INSERT INTO messages (message, name) VALUES(?,?)";
+    $param = [$message, $user];
 	
 	try {
-		if(!$db->query($q)) {}
+		//if(!$db->exec($q)) {}
+        $stm = $db->prepare($q);
+        $stm->execute($param);
 	}
 	catch(PDOException $e) {}
 	
-	$q = "SELECT * FROM users WHERE username = '" .$user ."'";
-	$result;
-	$stm;
+	$q = "SELECT * FROM users WHERE username = ?";
+    $param = [$user];
+
 	try {
 		$stm = $db->prepare($q);
-		$stm->execute();
+		$stm->execute($param);
 		$result = $stm->fetchAll();
 		if(!$result) {
 			return "Could not find the user";

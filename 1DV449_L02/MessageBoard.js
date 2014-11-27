@@ -6,6 +6,7 @@ var MessageBoard = {
     textField: null,
     messageArea: null,
     nameField : null, //Lade till denna, fungerar dt? Lade till den då den används men finns inte....
+    lastCount : 0,
 
     init:function(e)
     {
@@ -35,28 +36,46 @@ var MessageBoard = {
     },
     getMessages:function() {
         console.log("INNE");
-        $.ajax({
-			type: "GET",
-			url: "functions.php",
-            data: {function: "getMessages"}
-		}).done(function(data) { // called when the AJAX call is rready
-						
-			data = JSON.parse(data);
-		
-			
-			for(var mess in data) {
-				var obj = data[mess];
-			    var text = obj.name +" said:\n" +obj.message;
-				var mess = new Message(text, new Date());
-                var messageID = MessageBoard.messages.push(mess)-1;
-    
-                MessageBoard.renderMessage(messageID);
-				
-			}
-			document.getElementById("nrOfMessages").innerHTML = MessageBoard.messages.length;
-			
-        });
-	
+
+
+        var runAjax = function(){
+            $.ajax({
+                type: "GET",
+                url: "functions.php",
+                data: {function: "getMessages"}
+            }).done(function(data) { // called when the AJAX call is rready
+                var counter = 0;
+                console.log("Ajaxar");
+                data = JSON.parse(data);
+                data.reverse();//Senaste meddelandet syns överst...
+                for(var count in data){
+                    counter++;
+                }
+
+                if(counter > MessageBoard.lastCount){ // Om det finns mer data att hämta så skrivs den ut...
+
+                    MessageBoard.lastCount = counter;
+                    //$("messagearea").innerHTML = "";
+                    window.scrollTo(0,0);
+                    document.getElementById("messagearea").innerHTML = "";
+                    for(var mess in data) {
+                        var obj = data[mess];
+                        var text = obj.name +" said:\n" +obj.message;
+                        var mess = new Message(text, new Date());
+                        var messageID = MessageBoard.messages.push(mess)-1;
+
+                        MessageBoard.renderMessage(messageID);
+
+                    }
+                    document.getElementById("nrOfMessages").innerHTML = MessageBoard.messages.length;
+                }
+            });
+        }
+
+        setInterval(function(){
+            runAjax();
+        },2000);
+        runAjax();
 
     },
     sendMessage:function(){

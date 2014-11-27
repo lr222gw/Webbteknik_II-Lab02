@@ -69,7 +69,12 @@ function isUser($u, $p) {
 
     /*var_dump(password_verify($p,$userHashedPass));
     die();*/
-    if(password_verify($p,$userHashedPass)){
+    $didItGoTrough = false;
+    // didItGoTrough = password_verify($p,$userHashedPass); //<- Kan inte köras på mitt webbhotell. annars hade jag använt detta !!!!
+
+    $didItGoTrough = checkIfPasswordIstrue($p,$userHashedPass);
+
+    if($didItGoTrough){
 
         $q = "SELECT id FROM users WHERE username = ? AND password = ?";
         $param = [$u, $userHashedPass];
@@ -97,6 +102,41 @@ function isUser($u, $p) {
 
 
 	
+}
+
+//funktionen under används inte men ersätter password_verify
+function checkIfPasswordIstrue($inputFromUser, $usersHashedPassword){
+    //vi krypterar det inmatade lösenordet, testar om det är samma som användarens lösenord
+    //om så är fallet så stämde lösenordet...
+
+    $shouldBeSameAsHashed = crypt($inputFromUser, $usersHashedPassword);
+
+    if($shouldBeSameAsHashed == $usersHashedPassword){
+        return true;
+    }else{
+        return false;
+    }
+}
+
+//funktionen under används inte men ersätter password_hash
+function cryptPass($passwordToCrypt, $rounds = 9){
+    //krypterar lösenordet med blowfish, har följt denna guide https://www.youtube.com/watch?v=wIRtl8CwgIc
+    //returnerar det krypterade lösenordet
+    //OBS: blowfish verkar kräva nyare version av php. version.5.2.12 verkar ej funka...
+    $salt = "";
+
+    //skapar en lång array med alla (typ) tecken från alfabetet + siffrorna 0-9
+    $saltChars = array_merge(range("A","Z"), range("a","z"), range(0,9));
+
+    for($i=0;$i < 22;$i++){ // for loop som ska utföras 22 gånger, Blowfish behöver 22 blandade tecken..
+        $salt .= $saltChars[array_rand($saltChars)];
+        //För varje "varv" så läggs en slumpad karaktär från arrayen in i strängen $salt (22blandade tecken)
+    }
+
+    //Nu ska vi kryptera och returnera det krypterade lösenordet!
+    return crypt($passwordToCrypt, sprintf("$2y$%02d$", $rounds) . $salt);//
+    // "$2y$%02d$" är den delen som gör att vi krypterar genom blowfish, endast "$2y$" är nödvändigt
+    // det andra är "extra saker" som killen i videon sa var bra (lite svårare att kryptera...)
 }
 
 /*function getUser($user) {

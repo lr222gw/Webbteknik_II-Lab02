@@ -1,3 +1,11 @@
+<?php
+require_once("sec.php");
+sec_session_start();
+if(isset($_SESSION['username']) && doTokenMatch()){
+    header("Location: mess.php");
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -11,6 +19,7 @@
     <title>Mezzy Labbage - Logga in</title>
 
     <!-- Bootstrap core CSS -->
+      <script src="js/jquery.min.js"></script>
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
 

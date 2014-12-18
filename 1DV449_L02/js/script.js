@@ -1,4 +1,4 @@
-$(document).ready(function() {
+/*$(document).ready(function() {
     (function(){
         var poll = function(){
             //MessageBoard.getMessages();
@@ -9,7 +9,7 @@ $(document).ready(function() {
         },2000);
     })();
     MessageBoard.getMessages();
-});
+});*/
 
 
 

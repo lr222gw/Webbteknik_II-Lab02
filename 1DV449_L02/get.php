@@ -14,8 +14,7 @@ function getMessages() {
 	
 	$q = "SELECT * FROM messages";
 	
-	$result;
-	$stm;	
+
 	try {
 		$stm = $db->prepare($q);
 		$stm->execute();

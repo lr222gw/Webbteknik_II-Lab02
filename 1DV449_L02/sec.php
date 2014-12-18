@@ -36,7 +36,36 @@ function sec_session_start() {
 	return true;
 }*/
 
-function isUser($u, $p) {
+function doTokenMatch(){
+    $db = null;
+
+    try {
+        $db = new PDO("sqlite:db.db");
+        $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    }
+    catch(PDOEception $e) {
+        die("Del -> " .$e->getMessage());
+    }
+
+    $query = "SELECT csrfToken FROM users WHERE username = ?";
+    $param = [$_SESSION["username"]];
+
+    try {
+        $stm = $db->prepare($query);
+        $stm->execute($param);
+        $csrfTokenOnDb = $stm->fetch(PDO::FETCH_COLUMN);
+        if($csrfTokenOnDb === $_SESSION["login_string"]){
+            return true;
+        }else{
+            return false;
+        }
+    }catch(PDOException $e) {
+        echo("Error creating query: " .$e->getMessage());
+        return false;
+    }
+}
+
+function isUser($u, $p, $loginString) {
 	$db = null;
   /*  var_dump(password_hash($p, PASSWORD_DEFAULT));
         die();*/
@@ -95,6 +124,21 @@ function isUser($u, $p) {
             echo("Error creating query: " .$e->getMessage());
             return false;
         }
+
+        $q = "UPDATE users
+                SET csrfToken = ?
+                WHERE username = ? AND password = ?";
+        $randomValue = $loginString;
+        $param = [$randomValue ,$u, $userHashedPass];
+        try {
+            $stm = $db->prepare($q);
+            $stm->execute($param);
+        }
+        catch(PDOException $e) {
+            echo("Error creating query: " .$e->getMessage());
+            return false;
+        }
+        $_SESSION["csrfToken"] = $randomValue;
         return $result;
     }else{
         return false;

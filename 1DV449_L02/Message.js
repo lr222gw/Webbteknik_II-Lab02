@@ -30,7 +30,7 @@ Message.prototype.getHTMLText = function() {
 }
 
 Message.prototype.getDateText = function() {
-    return this.getDate().toLocaleTimeString();
+    return this.getDate().toLocaleTimeString(); //
 }
 
 

@@ -40,7 +40,8 @@ function addToDB($message, $user) {
 		return false;
 	}
 	// Send the message back to the client
-	echo "Message saved by user: " .json_encode($result);
+	// echo "Message saved by user: " .json_encode($result);
+
 	
 }
 

@@ -1,7 +1,15 @@
 <?php
+    require_once("sec.php");
 	require_once("get.php");
+    sec_session_start();
+
     header('Expires: '.gmdate('D, d M Y H:i:s G\M\T', time() + 89400));//nån gång imorgon...
 /*var_dump(gmdate('D, d M Y H:i:s G\M\T', time() + 89400));*/
+//var_dump($_SESSION["username"]);
+if(isset($_SESSION["username"]) == false || doTokenMatch() == false){
+    header('HTTP/1.1 401 Unauthorized');
+    die("could not call");
+}
 ?>
 <!DOCTYPE html>
 <html lang="sv">
@@ -25,14 +33,15 @@
     
 	<title>Messy Labbage</title>
   </head>
-	  
+
 	  	<body background="http://www.lockley.net/backgds/big_leo_minor.jpg">        
 
         <div id="container">
             
             <div id="messageboard">
-                <input class="btn btn-danger" type="button" id="buttonLogout" value="Logout" style="margin-bottom: 20px;" />
-                
+                <form method="post" action="functions.php">
+                    <input type="submit" class="btn btn-danger"  id="buttonLogout" name='logout' value="Logout" style="margin-bottom: 20px;" />
+                </form>
                 <div id="messagearea"></div>
                 
                 <p id="numberOfMess">Antal meddelanden: <span id="nrOfMessages">0</span></p>
@@ -49,13 +58,13 @@
 
         <script src="js/jquery.min.js"></script>
         <script src="MessageBoard.js"></script> <!--"MessageBoard.min.js" -->
-        <script src="js/script.min.js"></script>
+        <!--<script src="js/script.min.js"></script>-->
         <script src="Message.min.js"></script>
         <script type="text/javascript" src="js/jquery.min.js"></script>
-        <script type="text/javascript" src="js/longpoll.js"></script>
+        <!--<script type="text/javascript" src="js/longpoll.js"></script>-->
 
         <!-- This script is running to get the messages -->
-			<script src="js/script.min.js"></script>
+			<!--<script src="js/script.min.js"></script>-->
 			<script src="js/bootstrap.min.js"></script>
 
 

@@ -5,9 +5,9 @@
         <item url="file://$PROJECT_DIR$/js/script.min.js" />
         <item url="file://$PROJECT_DIR$/MessageBoard.min.js" />
         <item url="file://$PROJECT_DIR$/Message.min.js" />
+        <item url="file://$PROJECT_DIR$/MessageBoard.min.js" />
         <item url="file://$PROJECT_DIR$/js/jquery.min.js" />
         <item url="file://$PROJECT_DIR$/js/bootstrap.min.js" />
-        <item url="file://$PROJECT_DIR$/js/script.min.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
@@ -139,10 +139,10 @@
       <root url="file://$PROJECT_DIR$/node_modules/uglify-js/test/compress/concat-strings.min.js" />
       <root url="file://$PROJECT_DIR$/js/script.min.js" />
       <root url="file://$PROJECT_DIR$/MessageBoard.min.js" />
+      <root url="file://$PROJECT_DIR$/MessageBoard.min.js" />
       <root url="file://$PROJECT_DIR$/Message.min.js" />
       <root url="file://$PROJECT_DIR$/js/jquery.min.js" />
       <root url="file://$PROJECT_DIR$/js/bootstrap.min.js" />
-      <root url="file://$PROJECT_DIR$/js/script.min.js" />
     </CLASSES>
     <SOURCES />
   </library>

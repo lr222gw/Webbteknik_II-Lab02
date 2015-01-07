@@ -5,7 +5,8 @@
 */
 function addToDB($message, $user) {
 	$db = null;
-	
+    $user = htmlspecialchars($user); // Mot XSS...
+    $message = htmlspecialchars($message);
 	try {
 		$db = new PDO("sqlite:db.db");
 		$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);

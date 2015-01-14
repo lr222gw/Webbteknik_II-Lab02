@@ -26,7 +26,7 @@
       <file leaf-file-name="MessageBoard.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MessageBoard.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="80" selection-start="2481" selection-end="2481" vertical-scroll-proportion="0.0" vertical-offset="816" max-vertical-offset="3910">
+            <state line="90" column="125" selection-start="3311" selection-end="3325" vertical-scroll-proportion="0.0" vertical-offset="1224" max-vertical-offset="3910">
               <folding />
             </state>
           </provider>
@@ -50,10 +50,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="functions.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="functions.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="33" selection-start="476" selection-end="476" vertical-scroll-proportion="-0.0" vertical-offset="425" max-vertical-offset="1173">
+            <state line="33" column="9" selection-start="817" selection-end="817" vertical-scroll-proportion="0.75555557" vertical-offset="153" max-vertical-offset="1309">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="standard_4.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_4.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="181" column="9" selection-start="6235" selection-end="6235" vertical-scroll-proportion="-7.230769" vertical-offset="2889" max-vertical-offset="18496">
               <folding />
             </state>
           </provider>
@@ -62,7 +71,7 @@
       <file leaf-file-name="ajaxpoll.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ajaxpoll.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="0" selection-start="415" selection-end="415" vertical-scroll-proportion="-14.384615" vertical-offset="0" max-vertical-offset="901">
+            <state line="19" column="48" selection-start="395" selection-end="395" vertical-scroll-proportion="-10.076923" vertical-offset="61" max-vertical-offset="901">
               <folding />
             </state>
           </provider>
@@ -79,10 +88,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="post.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="post.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/post.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="38" selection-start="234" selection-end="234" vertical-scroll-proportion="0.3794643" vertical-offset="0" max-vertical-offset="918">
+            <state line="29" column="0" selection-start="676" selection-end="676" vertical-scroll-proportion="-8.5" vertical-offset="272" max-vertical-offset="918">
               <folding>
                 <marker date="1420671197454" expanded="true" signature="392:440" placeholder="INSERT INTO ..." />
                 <marker date="1420671197454" expanded="true" signature="613:651" placeholder="SELECT * FRO..users..." />
@@ -91,20 +100,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mess.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mess.php">
+      <file leaf-file-name="sec.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sec.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="95" selection-start="1572" selection-end="1578" vertical-scroll-proportion="-5.576923" vertical-offset="569" max-vertical-offset="1309">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="check.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/check.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="6" selection-end="30" vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="476">
-              <folding />
+            <state line="38" column="21" selection-start="1268" selection-end="1280" vertical-scroll-proportion="-5.230769" vertical-offset="510" max-vertical-offset="3859">
+              <folding>
+                <marker date="1418595485590" expanded="true" signature="1517:1563" placeholder="SELECT csrfT..users..." />
+                <marker date="1418595485590" expanded="true" signature="2303:2348" placeholder="SELECT passw..users..." />
+                <marker date="1418595485590" expanded="true" signature="3086:3142" placeholder="SELECT id FR..users..." />
+                <marker date="1418595485590" expanded="true" signature="3606:3704" placeholder="UPDATE users..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -112,7 +117,7 @@
       <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="0" selection-start="726" selection-end="726" vertical-scroll-proportion="-17.653847" vertical-offset="0" max-vertical-offset="884">
+            <state line="22" column="56" selection-start="719" selection-end="719" vertical-scroll-proportion="-1.1538461" vertical-offset="344" max-vertical-offset="884">
               <folding />
             </state>
           </provider>
@@ -140,13 +145,13 @@
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/js/script.js" />
         <option value="$PROJECT_DIR$/js/script.min.js" />
-        <option value="$PROJECT_DIR$/mess.php" />
-        <option value="$PROJECT_DIR$/functions.php" />
         <option value="$PROJECT_DIR$/get.php" />
-        <option value="$PROJECT_DIR$/MessageBoard.js" />
         <option value="$PROJECT_DIR$/Message.js" />
         <option value="$PROJECT_DIR$/ajaxpoll.php" />
         <option value="$PROJECT_DIR$/post.php" />
+        <option value="$PROJECT_DIR$/MessageBoard.js" />
+        <option value="$PROJECT_DIR$/mess.php" />
+        <option value="$PROJECT_DIR$/functions.php" />
       </list>
     </option>
   </component>
@@ -422,18 +427,18 @@
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33065596" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2705367" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32931727" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32931727" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991013" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24582799" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18934532" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32931727" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20961282" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="92" y="92" width="1416" height="676" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -465,7 +470,9 @@
     <entry file="file://$PROJECT_DIR$/mess.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="40" column="33" selection-start="1429" selection-end="1429" vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="1292">
-          <folding />
+          <folding>
+            <element signature="e#1595#1623#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -516,7 +523,9 @@
     <entry file="file://$PROJECT_DIR$/mess.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="72" selection-start="978" selection-end="978" vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="1156">
-          <folding />
+          <folding>
+            <element signature="e#1595#1623#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -605,7 +614,9 @@
     <entry file="file://$PROJECT_DIR$/mess.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="58" column="51" selection-start="2349" selection-end="2349" vertical-scroll-proportion="0.0" vertical-offset="746" max-vertical-offset="1156">
-          <folding />
+          <folding>
+            <element signature="e#1595#1623#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -695,28 +706,9 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="477" />
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_4.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="622" column="9" selection-start="20977" selection-end="21051" vertical-scroll-proportion="0.35267857" vertical-offset="10416" max-vertical-offset="18496">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/script.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="13309" selection-start="45338" selection-end="45338" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="119" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="0" selection-start="726" selection-end="726" vertical-scroll-proportion="-17.653847" vertical-offset="0" max-vertical-offset="884">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sec.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="217" column="18" selection-start="6314" selection-end="6314" vertical-scroll-proportion="-16.038462" vertical-offset="3272" max-vertical-offset="3859" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pic/b.jpg">
@@ -731,9 +723,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MessageBoard.js">
+    <entry file="file://$PROJECT_DIR$/check.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="80" selection-start="2481" selection-end="2481" vertical-scroll-proportion="0.0" vertical-offset="816" max-vertical-offset="3910">
+        <state line="8" column="40" selection-start="175" selection-end="175" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="476">
           <folding />
         </state>
       </provider>
@@ -745,31 +737,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/check.php">
+    <entry file="file://$PROJECT_DIR$/MessageBoard.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="6" selection-end="30" vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="476">
+        <state line="90" column="125" selection-start="3311" selection-end="3325" vertical-scroll-proportion="0.0" vertical-offset="1224" max-vertical-offset="3910">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mess.php">
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="95" selection-start="1572" selection-end="1578" vertical-scroll-proportion="-5.576923" vertical-offset="569" max-vertical-offset="1309">
+        <state line="22" column="56" selection-start="719" selection-end="719" vertical-scroll-proportion="-1.1538461" vertical-offset="344" max-vertical-offset="884">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/functions.php">
+    <entry file="file://$PROJECT_DIR$/sec.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="33" selection-start="476" selection-end="476" vertical-scroll-proportion="-0.0" vertical-offset="425" max-vertical-offset="1173">
-          <folding />
+        <state line="38" column="21" selection-start="1268" selection-end="1280" vertical-scroll-proportion="-5.230769" vertical-offset="510" max-vertical-offset="3859">
+          <folding>
+            <marker date="1418595485590" expanded="true" signature="1517:1563" placeholder="SELECT csrfT..users..." />
+            <marker date="1418595485590" expanded="true" signature="2303:2348" placeholder="SELECT passw..users..." />
+            <marker date="1418595485590" expanded="true" signature="3086:3142" placeholder="SELECT id FR..users..." />
+            <marker date="1418595485590" expanded="true" signature="3606:3704" placeholder="UPDATE users..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ajaxpoll.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="415" selection-end="415" vertical-scroll-proportion="-14.384615" vertical-offset="0" max-vertical-offset="901">
+        <state line="19" column="48" selection-start="395" selection-end="395" vertical-scroll-proportion="-10.076923" vertical-offset="61" max-vertical-offset="901">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/post.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="0" selection-start="676" selection-end="676" vertical-scroll-proportion="-8.5" vertical-offset="272" max-vertical-offset="918">
+          <folding>
+            <marker date="1420671197454" expanded="true" signature="392:440" placeholder="INSERT INTO ..." />
+            <marker date="1420671197454" expanded="true" signature="613:651" placeholder="SELECT * FRO..users..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -782,13 +789,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/post.php">
+    <entry file="file://$PROJECT_DIR$/mess.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="38" selection-start="234" selection-end="234" vertical-scroll-proportion="0.3794643" vertical-offset="0" max-vertical-offset="918">
+        <state line="71" column="0" selection-start="2945" selection-end="2945" vertical-scroll-proportion="-12.269231" vertical-offset="888" max-vertical-offset="1547">
           <folding>
-            <marker date="1420671197454" expanded="true" signature="392:440" placeholder="INSERT INTO ..." />
-            <marker date="1420671197454" expanded="true" signature="613:651" placeholder="SELECT * FRO..users..." />
+            <element signature="e#1595#1623#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_4.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="181" column="9" selection-start="6235" selection-end="6235" vertical-scroll-proportion="-7.230769" vertical-offset="2889" max-vertical-offset="18496">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="9" selection-start="817" selection-end="817" vertical-scroll-proportion="0.75555557" vertical-offset="153" max-vertical-offset="1309">
+          <folding />
         </state>
       </provider>
     </entry>

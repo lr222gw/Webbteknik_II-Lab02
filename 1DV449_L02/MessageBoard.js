@@ -88,7 +88,7 @@ var MessageBoard = {
         $.ajax({
 			type: "GET",
 		  	url: "functions.php",
-		  	data: {function: "add", name: MessageBoard.nameField.value, message: MessageBoard.textField.value},   // Är denna säker? borde datan kontrolleras som matas in? kod som <script>alert("XSS är möjlig")</script>verkar inte köras... så ok? Liknande koder fungerar ej heller...
+		  	data: {function: "add", name: MessageBoard.nameField.value, message: MessageBoard.textField.value, superCoolToken: document.getElementById("superCoolToken").value},   // Är denna säker? borde datan kontrolleras som matas in? kod som <script>alert("XSS är möjlig")</script>verkar inte köras... så ok? Liknande koder fungerar ej heller...
             success: function(data){
                 console.log("Your message is (maybe) saved! Can't be sure since i don't check...");
                 //window.location.reload();

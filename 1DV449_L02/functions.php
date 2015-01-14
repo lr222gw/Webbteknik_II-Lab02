@@ -21,10 +21,18 @@ if(isset($_GET['function'])) {
 
 
     if($_GET['function'] == 'add') {
-	    $name = $_GET["name"];
-        $message = $_GET["message"];
-        addToDB($message, $name);
-		//header("Location: test/debug.php");
+        /*Kontrollererar här då Funktionen ADD (som körs när man skickar meddelanden)
+        */
+        var_dump($_SESSION["sessionToken"]);
+        var_dump($_GET["superCoolToken"]);
+        die();
+        if($_GET["superCoolToken"] == $_SESSION["sessionToken"]){
+            $name = $_GET["name"];
+            $message = $_GET["message"];
+            addToDB($message, $name);
+            //header("Location: test/debug.php");
+        }
+
     }
     /*elseif($_GET['function'] == 'getMessages') {
 

@@ -41,14 +41,17 @@ if(isset($_SESSION["username"]) == false || doTokenMatch() == false){
             <div id="messageboard">
                 <form method="post" action="functions.php">
                     <input type="submit" class="btn btn-danger"  id="buttonLogout" name='logout' value="Logout" style="margin-bottom: 20px;" />
-                </form>
+                </form><!--Kan jag spara i SessionToken här? Varför går/inte Det? -->
                 <div id="messagearea"></div>
-                
+
+
+
                 <p id="numberOfMess">Antal meddelanden: <span id="nrOfMessages">0</span></p>
                 Name:<br /> <input id="inputName" type="text" name="name" /><br />
                 Message: <br />
                 <textarea name="mess" id="inputText" cols="55" rows="6"></textarea>
                 <input class="btn btn-primary" type="button" id="buttonSend" value="Write your message" />
+                <input id="superCoolToken" type="hidden" name="superCoolToken" value="<? echo $_SESSION["sessionToken"] = generateRandomString(); ?>">
                 <span class="clear">&nbsp;</span>
 
             </div>
@@ -70,3 +73,14 @@ if(isset($_SESSION["username"]) == false || doTokenMatch() == false){
 
 	</body>
 	</html>
+
+<?
+function generateRandomString($length = 10) {
+    $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    $charactersLength = strlen($characters);
+    $randomString = '';
+    for ($i = 0; $i < $length; $i++) {
+        $randomString .= $characters[rand(0, $charactersLength - 1)];
+    }
+    return $randomString;
+}
